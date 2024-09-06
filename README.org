@@ -4,19 +4,17 @@
 #+DATE: [2024-09-06 Fri]
 #+OPTIONS: toc:nil
 
-* crates.el
-
-`crates.el` is an Emacs minor mode designed to help you manage and update crate versions in `Cargo.toml` files.
+/crates.el/ is an Emacs minor mode designed to help you manage and update crate versions in /Cargo.toml/ files.
 
 ** Features
 
-- **Version Checking**: Automatically checks the versions of crates listed in `Cargo.toml`.
-- **Version Updating**: Updates crate versions to the latest available version.
-- **Overlays**: Provides visual feedback in the buffer using overlays, indicating up-to-date crates and those needing updates.
+- Version Checking: Automatically checks the versions of crates listed in /Cargo.toml/.
+- Version Updating: Updates crate versions to the latest available version.
+- Overlays: Provides visual feedback in the buffer using overlays, indicating up-to-date crates and those needing updates.
 
 ** Installation
 
-You can install `crates.el` using [straight.el](https://github.com/raxod502/straight.el).
+You can install /crates.el/ using [[https://github.com/raxod502/straight.el][straight.el]].
 
 *** Using straight.el
 
@@ -24,11 +22,11 @@ Add the following to your Emacs configuration:
 
 #+BEGIN_SRC emacs-lisp
 (straight-use-package
- '(crates :type git :host github :repo "mrkatebzadeh/crate.el"))#+END_SRC
-
+ '(crates :type git :host github :repo "mrkatebzadeh/crate.el"))
+#+END_SRC
 ** Usage
 
-When you open a `Cargo.toml` file, `crates-mode` will be enabled automatically. This mode will check the versions of the crates listed in your file and display overlays to indicate if they are up-to-date or need updating.
+When you open a /Cargo.toml/ file, /crates-mode/ will be enabled automatically. This mode will check the versions of the crates listed in your file and display overlays to indicate if they are up-to-date or need updating.
 
 You can manually refresh the buffer to check for updates again by running:
 
@@ -46,8 +44,8 @@ M-x crates-update-current-line
 
 You can customize the symbols used for indicating crate status:
 
-- `crates-checkmark-symbol`: Symbol to indicate that a crate version is up-to-date (default: "✅").
-- `crates-warning-symbol`: Symbol to indicate that a crate version is out of date (default: "⚠️").
+- /crates-checkmark-symbol/: Symbol to indicate that a crate version is up-to-date (default: "✅").
+- /crates-warning-symbol/: Symbol to indicate that a crate version is out of date (default: "⚠️").
 
 ** License
 
