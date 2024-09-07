@@ -22,7 +22,7 @@ Add the following to your Emacs configuration:
 
 #+BEGIN_SRC emacs-lisp
 (straight-use-package
- '(crates :type git :host github :repo "mrkatebzadeh/crate.el"))
+ '(crates :type git :host github :repo "mrkatebzadeh/crates.el"))
 #+END_SRC
 ** Usage
 
